@@ -38,15 +38,15 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f1xx_hal.h"
-#include "lcd/pcd8544.h"
-#include "lcd/Graphic.h"
-#include "lcd/AF12x16.h"
-#include "lcd/AF9x10.h"
-#include "lcd/AF9x11.h"
-#include "lcd/f10x20.h"
-#include "lcd/f9x14.h"
-#include "lcd/f5x7.h"
-#include "lcd/Font.h"
+#include "pcd8544.h"
+#include "Graphic.h"
+#include "AF12x16.h"
+#include "AF9x10.h"
+#include "AF9x11.h"
+#include "f10x20.h"
+#include "f9x14.h"
+#include "f5x7.h"
+#include "Font.h"
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -109,7 +109,7 @@ SetLetter(P_LETTER);
   SetFgColor(1);
   SetBkColor(0);
   LcdFont(AF9x10);
-  TextBox(0,0,80,40,"»”„ «··Â",ALINE_CENTER|BORDER_FILL);
+  TextBox(0,0,80,40,"√à√ì√£ √á√°√°√•",ALINE_CENTER|BORDER_FILL);
   PCD8544_Puts("Discovery", PCD8544_Pixel_Set, PCD8544_FontSize_5x7);
  PCD8544_Refresh();
   while (1)
